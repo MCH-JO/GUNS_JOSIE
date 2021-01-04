@@ -1,0 +1,231 @@
+/* commun à toutes les pages */
+@font-face {
+	font-family: 'Banksia';
+	src: url('polices/Banksia/Banksia.ttf');
+}
+	
+@font-face {
+	font-family: 'Edmunds';
+	src: url('polices/Edmunds/edmunds.otf');
+}
+
+@font-face {
+	font-family: 'Plug-NickelBlack';
+	src: url('polices/Plug-NickelBlack/Plug-NickelBlack.ttf');
+}
+
+.titre_principal {
+	background-color: black;
+	text-align: center;
+	text-shadow: none;
+	text-transform: uppercase;
+	border-style: none;
+	border-color: black;
+	border-width: thin;
+	box-shadow: inset 0 0 0.5em 0.1em darkgoldenrod;
+	border-radius: 0.9em;
+	padding: 0.5em;
+}
+
+h1 {
+	background-color: white;
+	text-align: center;
+	text-shadow: none;
+	text-transform: uppercase;
+	border-style: none;
+	box-shadow: inset 0 0 0.5em 0.1em darkgoldenrod;
+	border-radius: 0.9em;
+	padding: 0.5em;
+}
+
+body {
+	background-image: url("images/fond.png");
+	background-size: contain;
+	font-family: Edmunds, Impact, "Comic Sans MS", sans-serif;
+	color: darkgoldenrod;
+	/*text-shadow: 0.02em 0.05em 0 black;	*/
+	background-color: white;
+	font-size: 140%;
+}
+
+.liens {
+	text-align: center;
+	display: align;
+}
+
+.liens li {
+	display: inline-block;
+	padding: 1em;
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+
+li {
+	list-style: none;	
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: darkgoldenrod;
+	text-shadow: 0.05em 0.05em 0 black;
+}
+
+h2 a {
+	text-decoration: none;
+	text-shadow: 0.1em 0.1em 0.05em darkgoldenrod;
+	color: white;
+}
+
+h2 {
+	color: white;
+	text-align: center;		/*centrer les titres ds les boites */
+	text-shadow: 0.1em 0.1em 0.05em darkgoldenrod;
+	box-shadow: inset 0.2em 0.2em 0.5em white;
+	padding-top: 0.05em;
+	padding-bottom: 0.2em;
+	width: 8em;		/*largeur de la boite */
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 0.8em 0 / 100% 0;
+	border-style: none none solid solid;
+	border-width: thin;
+	border-left-color: white;
+	border-top-color: white;
+	border-right-color: darkgoldenrod;
+	border-bottom-color: darkgoldenrod;
+}
+
+p {
+	width: 40em;
+	margin-left: auto;	/*on centre la boîte...*/
+	margin-right: auto;	/*...sur la page*/
+	text-align: center;	
+	background-color: white;
+	border-style: solid;;
+	border-width: 0.1em;
+	border-radius: 0.9em;
+	padding: 0.8em;
+	border-color: white;
+	box-shadow: 0.2em 0.2em 0.2em darkgoldenrod;
+}
+
+p a {
+	text-decoration: none;
+	color: black;
+	text-shadow: none;
+	text-shadow: 0.05em 0.05em darkgoldenrod;
+}
+
+form {
+	margin: 0.2em;
+}
+
+footer ul {
+	border-top: medium solid black;
+	text-align: center;
+	display: align;
+}
+
+footer ul li {
+	display: inline-block;
+	font-size: 1em;
+	color: black;
+	text-shadow: none;
+	padding:1em;
+}
+
+footer a {
+	text-decoration: none;
+	color: black;
+	padding: 2em;
+}
+
+/* page d'accueil*/
+.citationJour {
+	text-shadow: 0.05em 0.05em black;
+	font-style: italic;
+	color: darkgoldenrod;
+}
+.clignote {
+	color: darkgoldenrod;
+	animation-name: clignote;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	transition: none;
+}
+@keyframes clignote {
+	50% { opacity: 0;}
+}
+
+/* page contact */
+fieldset {
+	width: 20em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* page catalogue */
+.poing img {
+	width: 5em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-right: 1em;	
+	margin-left: 1em;
+	height: auto;
+	vertical-align: center;		/*le texte coincide avec le milieu de l'image */
+	border-style: ridge;
+	border-color: darkgoldenrod;
+}
+.poing {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+div article {
+	padding: 1em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* page article */
+.revolver {
+	display: block;
+	border-style: ridge;
+	border-color: darkgoldenrod;
+	width: 20em;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+/* pages paniers */
+.panier {
+	color: black;
+	text-shadow: none;
+	background-image: url('images/fond3.png');
+	background-position: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.2em; 
+	border-collapse: separate;		/*collapse: on fait disparaitre l'écart entre les cellules */
+	text-shadow: none;
+	empty-cells: hide;
+}
+table tr th {
+	border-style: solid;
+	border-color: black;
+	border-width: thin;
+	padding: 0.3em;
+}
+.acheter{
+	width: 40em;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.titre_panier {
+	font-size: 2em;
+}

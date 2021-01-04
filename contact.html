@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+	<head>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="projet.css">
+		<title>Guns n' Josie</title>
+	</head>
+	<body>
+		<header>
+			<h1>Contact</h1>
+			<nav>
+				<ul class="liens">
+					<li><a href="index.html">Accueil</a></li>
+					<li><a href="catalogue.html">Catalogue</a></li>
+					<li><a href="reglementation.html">Reglementation française</a></li>
+					<li><a href="panier_vide.html">Panier</a></li>
+					<li><form action="catalogue.html" method="POST"><label><input type="search" name="Recherche"></label><input type="submit" value="Recherche"></form></li>
+				</ul>
+			</nav>
+		</header>
+		<section>
+			<form action="url()" method="POST">
+				<fieldset>
+					<legend>Etat civil</legend>
+					<label>Mme<input name="Sexe" type="radio" value="Madame"></label>
+					<label>M.<input name="Sexe" type="radio" value="Monsieur"></label><br>
+					<label>Nom:<input name="Nom_client"></label><br>
+					<label>Prenom:<input name="Prenom_client"></label><br>
+					<label>Date de naissance:<input name="Date_naissance" type="date"></label><br>
+					<label>N° tph:<input name="Numero_telephone" type="email"></label><br>
+					<label>@ mail:<input name="Email" type="email"></label><br>
+				</fieldset>
+				<fieldset>
+					<legend>Adresse</legend>				
+					<label>N°<input name="Numero" type="number"></label><br>
+					<label>Type de voie:<select name="Type_voie">
+						<option>Rue</option>
+						<option>Avenue</option>
+						<option>Boulevard</option>
+						<option>Route</option>
+						</select>
+					</label><br>
+					<label>Libellé voie:<textarea name="Adresse" cols="20"></textarea></label><br>
+					<label>CP<input name="Code_postal" type="number" min="01000" max="98000"></label><br>
+					<label>Ville<input name="Ville"></label><br>
+				</fieldset>
+				<fieldset>
+					<legend>Compte</legend>				
+					Mot de passe<label><input name="Password" type="password"></label>
+					<input name="Envoyer" type="submit"><br>
+				</fieldset>
+				<fieldset>
+					<legend>Soumettre</legend>				
+					<input name="Reset" type="reset">
+					<input name="Envoyer" type="submit"><br>
+				</fieldset>
+				<fieldset>
+					<legend>Questions / Remarques</legend>
+					<label><textarea name="Texte_libre" rows="3" cols="100"></textarea></label><br>
+					<label>Envoyer<input name="Reset" type="reset"></label>					
+				</fieldset>
+			</form>
+		</section>
+		<footer id="bas_de_page">
+			<ul>
+				<li>Réalisé avec Notepad++</li>
+				<li>HTML valide</li>
+				<li>CSS valide</li>
+				<li>Images libres de droits</li>
+				<li><a href="auteur.html">Qui sommes-nous</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>
