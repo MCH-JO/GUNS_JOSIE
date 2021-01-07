@@ -15,12 +15,12 @@
 					<li><a href="catalogue.html">Catalogue</a></li>
 					<li><a href="reglementation.html">Reglementation française</a></li>
 					<li><a href="panier_vide.html">Panier</a></li>
-					<li><form action="catalogue.html" method="POST"><label><input type="search" name="Recherche"></label><input type="submit" value="Recherche"></form></li>
+					<li><form action="catalogue.html" method="GET"><label><input type="search" name="Recherche"></label><input type="submit" value="Recherche"></form></li>
 				</ul>
 			</nav>
 		</header>
 		<section>
-			<form action="url()" method="POST">
+			<form action="index.html" method="POST">
 				<fieldset>
 					<legend>Etat civil</legend>
 					<label>Mme<input name="Sexe" type="radio" value="Madame"></label>
@@ -58,7 +58,7 @@
 				<fieldset>
 					<legend>Questions / Remarques</legend>
 					<label><textarea name="Texte_libre" rows="3" cols="100"></textarea></label><br>
-					<label>Envoyer<input name="Reset" type="reset"></label>					
+					<label>Envoyer<input name="Envoyer" type="submit"></label>					
 				</fieldset>
 			</form>
 		</section>

@@ -9,11 +9,6 @@
 	src: url('polices/Edmunds/edmunds.otf');
 }
 
-@font-face {
-	font-family: 'Plug-NickelBlack';
-	src: url('polices/Plug-NickelBlack/Plug-NickelBlack.ttf');
-}
-
 .titre_principal {
 	background-color: black;
 	text-align: center;
