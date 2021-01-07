@@ -20,7 +20,7 @@
 			</nav>
 		</header>
 		<section>
-			<table class="panier">
+			<table class="panier">	<!--On peut placer background="images/fond3.png" mais l'image couvrira tout le tableau-->
 				<tr>
 					<th colspan="3" class="titre_panier">Panier</th>		<!--le titre de colonne (th) "s'etale" sur 3 colonnes (coldspan) -->
 				</tr>
@@ -28,14 +28,14 @@
 					<th class="titre_panier">Article</th> <th class="titre_panier">Quantite</th> <th class="titre_panier">Prix Unitaire</th> 
 				</tr>
 				<tr>
-					<th>Revolver .357 Mag<form action="panier_vide.html" method="POST"><label><input type="submit" name="supprimer" value="Supprimer du panier"></label></form>
-						</th> <th><input type="number" name="quantite" value="1"></th> <th>1300€</th>
+					<th class="pleine">Revolver .357 Mag<form action="panier_vide.html" method="POST"><label><input type="submit" name="supprimer" value="Retirer du panier"></label></form>
+						</th> <th class="pleine"><input type="number" name="quantite" value="1"></th> <th class="pleine">1300€</th>
 				</tr>
 				<tr>
 					<th></th><th></th><th class="titre_panier">Montant TTC</th>
 				</tr>
 				<tr>
-					<th></th><th></th><th>1310€</th>
+					<th></th><th></th><th class="pleine">1310€</th>
 				</tr>
 			</table>
 		</section>

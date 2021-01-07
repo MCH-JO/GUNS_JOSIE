@@ -38,7 +38,6 @@ body {
 	background-size: contain;
 	font-family: Edmunds, Impact, "Comic Sans MS", sans-serif;
 	color: darkgoldenrod;
-	/*text-shadow: 0.02em 0.05em 0 black;	*/
 	background-color: white;
 	font-size: 140%;
 }
@@ -50,8 +49,8 @@ body {
 
 .liens li {
 	display: inline-block;
-	padding: 1em;
-	font-size: 1.2em;
+	padding: 1.2em;
+	font-size: 1.3em;
 	text-transform: uppercase;
 }
 
@@ -67,18 +66,20 @@ nav ul li a {
 
 h2 a {
 	text-decoration: none;
-	text-shadow: 0.1em 0.1em 0.05em darkgoldenrod;
+	text-shadow: 0 0 0.1em black, 0 0 0.1em darkgoldenrod, 0 0 0.1em darkgoldenrod, 0 0 0.1em darkgoldenrod;
 	color: white;
 }
 
 h2 {
-	color: white;
+	text-decoration: none;
+	color: white ;
+	font-size: 1.3em;
 	text-align: center;		/*centrer les titres ds les boites */
-	text-shadow: 0.1em 0.1em 0.05em darkgoldenrod;
+	text-shadow: 0 0 0.1em black, 0 0 0.1em darkgoldenrod, 0 0 0.1em darkgoldenrod, 0 0 0.1em darkgoldenrod;
 	box-shadow: inset 0.2em 0.2em 0.5em white;
 	padding-top: 0.05em;
 	padding-bottom: 0.2em;
-	width: 8em;		/*largeur de la boite */
+	width: 8.5em;		/*largeur de la boite */
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 0.8em 0 / 100% 0;
@@ -176,7 +177,6 @@ fieldset {
 	justify-content: space-between;
 
 }
-
 div article {
 	padding: 1em;
 	display: flex;
@@ -199,11 +199,10 @@ div article {
 .panier {
 	color: black;
 	text-shadow: none;
-	background-image: url('images/fond3.png');
-	background-position: center;
+	/*background-image: url('images/fond3.png') possible ici aussi;*/
 	margin-left: auto;
 	margin-right: auto;
-	font-size: 1.2em; 
+	font-size: 1.2em;
 	border-collapse: separate;		/*collapse: on fait disparaitre l'écart entre les cellules */
 	text-shadow: none;
 	empty-cells: hide;
@@ -220,7 +219,14 @@ table tr th {
 	margin-right: auto;
 	text-align: center;
 }
-
 .titre_panier {
 	font-size: 2em;
+}
+.titre_panier {
+	background-image: url('images/fond3.png');
+	background-position: center;
+}
+.pleine {
+	background-color: gainsboro;
+	color: black;
 }
