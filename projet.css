@@ -30,8 +30,13 @@ h1 {
 	border-radius: 0.9em;
 	padding: 0.5em;
 }
+html{
+		display: flex;
+	justify-content: center;
+}
 
 body {
+
 	background-image: url("images/fond.png");
 	background-size: contain;
 	font-family: Edmunds, Impact, "Comic Sans MS", sans-serif;
