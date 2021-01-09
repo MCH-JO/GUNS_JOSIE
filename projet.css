@@ -32,7 +32,10 @@ h1 {
 }
 
 body {
-	margin left: 0.5em;
+	width: 66em;
+	margin-left: auto;
+	margin-right: auto;
+	
 	background-image: url("images/fond.png");
 	background-size: contain;
 	font-family: Edmunds, Impact, "Comic Sans MS", sans-serif;
